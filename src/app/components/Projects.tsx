@@ -104,18 +104,16 @@ export function Projects() {
               <div className="p-8">
                 <p className="text-slate-700 text-lg leading-relaxed mb-6" style={{lineHeight: '1.8'}}>{project.description}</p>
 
-                {/* Live Website Button */}
+                {/* Project Link */}
                 {project.link && (
-                  <div className="mb-6">
+                  <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                     <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 hover:scale-105 hover:shadow-lg transition-all duration-300"
-                      aria-label={`Visit ${project.title} live website`}
+                      className="text-blue-600 hover:text-blue-800 font-medium break-all"
                     >
-                      <ExternalLink className="w-4 h-4" />
-                      Live Website
+                      {project.link}
                     </a>
                   </div>
                 )}
