@@ -1,0 +1,13 @@
+.export-mode * {
+  animation: none !important;
+  transition: none !important;
+}
+
+.export-mode #home {
+  min-height: auto !important;
+  padding-top: 2rem !important;
+}
+
+.export-mode section {
+  scroll-margin-top: 0 !important;
+}
