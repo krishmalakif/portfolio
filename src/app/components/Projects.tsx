@@ -29,7 +29,7 @@ export function Projects() {
       hciRelevance:
         "While designing this dashboard, I noticed that presenting too much data at once made navigation difficult. I restructured the interface using grouped sections and clearer hierarchy to make workflows more intuitive. The focus was on reducing the number of decisions users had to make at any given moment.",
       gradient: "from-blue-600 to-indigo-600",
-      link: "https://cheapstreamtv.com/",
+      link: "www.cheapstreamtv.com",
     },
     {
       title: "NAAC-USA Website",
@@ -46,7 +46,7 @@ export function Projects() {
       hciRelevance:
         "Building without framework dependencies required careful attention to how information was structured and how users would navigate through content. I focused on semantic markup not just for technical reasons, but because it directly impacts how people understand and interact with the interface.",
       gradient: "from-purple-600 to-pink-600",
-      link: "https://nacc-usa.org/",
+      link: "www.nacc-usa.org",
     },
     {
       title: "EN Admin Dashboard",
@@ -108,7 +108,7 @@ export function Projects() {
                 {project.link && (
                   <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                     <a
-                      href={project.link}
+                      href={`https://${project.link}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-800 font-medium break-all"
