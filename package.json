@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://krishmalakif.github.io/portfolio-website",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "export": "node scripts/export-custom-pdf.mjs",
-    "export:install": "npx playwright install chromium"
+    "export:install": "npx playwright install chromium",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -70,6 +73,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "4.1.12",
     "@vitejs/plugin-react": "4.7.0",
+    "gh-pages": "^6.3.0",
     "playwright": "^1.52.0",
     "tailwindcss": "4.1.12",
     "vite": "^6.4.1"
