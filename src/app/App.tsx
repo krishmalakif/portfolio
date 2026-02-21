@@ -3,9 +3,9 @@ import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
+import { TechStack } from "./components/TechStack";
 import { Contact } from "./components/Contact";
 import { Navigation } from "./components/Navigation";
-import { DownloadButton } from "./components/DownloadButton";
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,15 +24,13 @@ export default function App() {
       {/* Navigation */}
       {!isExportMode && <Navigation scrolled={scrolled} />}
 
-      {/* Download PDF Button */}
-      {!isExportMode && <DownloadButton />}
-
       {/* Main Content */}
       <main>
         <Hero isExportMode={isExportMode} />
         <About />
         <Skills />
         <Projects />
+        <TechStack />
         <Contact />
       </main>
 

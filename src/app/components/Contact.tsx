@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, MapPin, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, MapPin, Send, Github } from "lucide-react";
 
 export function Contact() {
   const contactInfo = [
@@ -10,18 +10,25 @@ export function Contact() {
       color: "from-blue-500 to-blue-600",
     },
     {
-      icon: Phone,
-      label: "Phone",
-      value: "+92 349 1122432",
-      href: "tel:+923491122432",
-      color: "from-green-500 to-green-600",
-    },
-    {
       icon: Linkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/krishmal-akif",
       href: "https://linkedin.com/in/krishmal-akif",
       color: "from-indigo-500 to-indigo-600",
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      value: "github.com/krishmalakif",
+      href: "https://github.com/krishmalakif",
+      color: "from-slate-700 to-slate-900",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+92 349 1122432",
+      href: "tel:+923491122432",
+      color: "from-green-500 to-green-600",
     },
     {
       icon: MapPin,
@@ -95,8 +102,8 @@ export function Contact() {
               <Send className="w-7 h-7 text-white" />
             </div>
             <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
-            <p className="text-blue-100 leading-relaxed mb-6" style={{lineHeight: '1.8'}}>
-              I am currently focused on advancing my understanding of interaction design, user behavior, and accessible systems through deeper technical and research-oriented exploration.
+            <p className="text-blue-100 leading-relaxed mb-6">
+              I am focused on advancing my understanding of interaction design, user behavior, and accessible systems through deeper technical and research-oriented exploration.
             </p>
           </div>
         </div>

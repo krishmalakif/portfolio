@@ -1,4 +1,4 @@
-import { GraduationCap, Target, Lightbulb, Users } from "lucide-react";
+import { GraduationCap, Target, Lightbulb, Users, Code2, Palette, Zap } from "lucide-react";
 
 export function About() {
   const motivations = [
@@ -16,6 +16,24 @@ export function About() {
       icon: Users,
       title: "Accessible Systems",
       description: "Building inclusive digital experiences for diverse user groups"
+    }
+  ];
+
+  const currentWork = [
+    {
+      icon: Code2,
+      title: "Building",
+      items: ["React/Next.js applications", "RESTful APIs with Node.js", "Responsive UI components"]
+    },
+    {
+      icon: Palette,
+      title: "Designing",
+      items: ["User-centered interfaces", "Interaction patterns", "Accessible experiences"]
+    },
+    {
+      icon: Zap,
+      title: "Exploring",
+      items: ["Human-computer interaction", "Cognitive design principles", "Usability research methods"]
     }
   ];
 
@@ -44,8 +62,7 @@ export function About() {
               </p>
               <p className="text-slate-600">Virtual University, Pakistan</p>
               <p className="text-slate-500 mt-4 leading-relaxed">
-                Built a strong foundation in software engineering, algorithms, and full-stack development
-                using modern JavaScript technologies.
+                Built foundation in software engineering, algorithms, and full-stack development with modern JavaScript frameworks.
               </p>
             </div>
           </div>
@@ -57,8 +74,31 @@ export function About() {
             </div>
             <h3 className="text-2xl font-bold mb-3">Current Focus</h3>
             <p className="text-blue-50 leading-relaxed">
-              While building complex web systems, I realized the most difficult problems were not technical. They were about how users think, interpret information, and navigate interfaces. That realization shifted my focus from simply implementing features to designing experiences that align with human behavior.
+              Building web systems revealed that the hardest problems are not technical. They are about how users think and navigate interfaces. This shifted my focus from implementing features to designing experiences aligned with human behavior.
             </p>
+          </div>
+        </div>
+
+        {/* Currently Working On */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-slate-900 mb-8 text-center">Currently Working On</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            {currentWork.map((item, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-slate-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                  <item.icon className="w-6 h-6 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h4>
+                <ul className="space-y-2">
+                  {item.items.map((task, i) => (
+                    <li key={i} className="flex items-start gap-2 text-slate-600">
+                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -67,14 +107,10 @@ export function About() {
           <h3 className="text-3xl font-bold text-slate-900 mb-6">From Development to Design Thinking</h3>
           <div className="max-w-4xl text-slate-700 leading-relaxed space-y-5 text-lg" style={{lineHeight: '1.8'}}>
             <p>
-              Through my experience building full-stack applications with <strong>React.js</strong>,{" "}
-              <strong>Next.js</strong>, and <strong>Node.js</strong>, I discovered that the most challenging
-              problems are not technical. They are human.
+              My work with <strong>React.js</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong> taught me that technical skills solve only half the problem. The other half is understanding how people think.
             </p>
             <p>
-              While developing streaming platforms, administrative dashboards, and content-focused websites,
-              I realized that understanding user behavior, cognitive patterns, and interaction principles
-              is essential for creating impactful digital systems.
+              Building streaming platforms and admin dashboards showed me that great software is not just about clean code. It is about creating systems that feel natural and reduce cognitive load.
             </p>
           </div>
         </div>
