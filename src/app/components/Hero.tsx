@@ -1,3 +1,4 @@
+import { Github, Linkedin, Mail } from "lucide-react";
 
 interface HeroProps {
   isExportMode?: boolean;
@@ -51,6 +52,57 @@ export function Hero({ isExportMode = false }: HeroProps) {
           </p>
         </div>
 
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+          <a
+            href="#projects"
+            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+          >
+            View Projects
+          </a>
+          <a
+            href="#contact"
+            className="px-8 py-4 bg-white text-slate-900 font-semibold rounded-lg border-2 border-slate-300 hover:border-blue-600 hover:shadow-lg transition-all duration-300"
+          >
+            Get in Touch
+          </a>
+          <a
+            href="/portfolio-website/resume.pdf"
+            download
+            className="px-8 py-4 bg-slate-800 text-white font-semibold rounded-lg hover:bg-slate-900 hover:shadow-lg transition-all duration-300"
+          >
+            Download Resume
+          </a>
+        </div>
+
+        {/* Social Links */}
+        <div className="flex items-center justify-center gap-6">
+          <a
+            href="https://github.com/krishmalakif"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-slate-900 hover:text-white transition-all duration-300"
+            aria-label="GitHub Profile"
+          >
+            <Github className="w-5 h-5" />
+          </a>
+          <a
+            href="https://linkedin.com/in/krishmal-akif"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-blue-600 hover:text-white transition-all duration-300"
+            aria-label="LinkedIn Profile"
+          >
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a
+            href="mailto:krishmalakif@gmail.com"
+            className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-indigo-600 hover:text-white transition-all duration-300"
+            aria-label="Email Contact"
+          >
+            <Mail className="w-5 h-5" />
+          </a>
+        </div>
       </div>
     </section>
   );

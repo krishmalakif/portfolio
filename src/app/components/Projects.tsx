@@ -1,4 +1,5 @@
-import { ExternalLink, Lightbulb } from "lucide-react";
+import { ExternalLink, Lightbulb, Github, ChevronDown } from "lucide-react";
+import React from "react";
 
 interface Project {
   title: string;
@@ -9,16 +10,20 @@ interface Project {
   hciRelevance: string;
   gradient: string;
   link?: string;
+  github?: string;
   status?: string;
+  image?: string;
 }
 
 export function Projects() {
+  const [expandedTech, setExpandedTech] = React.useState<number | null>(null);
+
   const projects: Project[] = [
     {
       title: "CheapStreamTV",
       tagline: "Interactive Streaming Platform",
       description:
-        "A modern streaming platform built with Next.js, React, and Tailwind CSS, emphasizing responsive design and seamless user experience across devices.",
+        "Modern streaming platform built with Next.js and React, emphasizing responsive design and seamless user experience across devices.",
       technologies: ["Next.js", "React.js", "Tailwind CSS", "JavaScript", "API Integration"],
       features: [
         "Component-based architecture for UI consistency",
@@ -27,7 +32,7 @@ export function Projects() {
         "Optimized API integration for fast content delivery",
       ],
       hciRelevance:
-        "While designing this dashboard, I noticed that presenting too much data at once made navigation difficult. I restructured the interface using grouped sections and clearer hierarchy to make workflows more intuitive. The focus was on reducing the number of decisions users had to make at any given moment.",
+        "Restructured interface using grouped sections and clearer hierarchy to reduce cognitive load. Focused on minimizing user decisions at any given moment.",
       gradient: "from-blue-600 to-indigo-600",
       link: "https://cheapstreamtv.com/",
     },
@@ -35,8 +40,8 @@ export function Projects() {
       title: "NAAC-USA Website",
       tagline: "Content-Focused Web Platform",
       description:
-        "A structured content platform built with core web technologies (HTML, CSS, JavaScript, PHP), emphasizing semantic markup and accessible navigation.",
-      technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "Responsive Design"],
+        "Structured content platform built with core web technologies, emphasizing semantic markup and accessible navigation.",
+      technologies: ["HTML5", "Responsive Design", "JavaScript", "PHP", "CSS3"],
       features: [
         "Semantic HTML structure for accessibility",
         "Custom interactive behaviors with vanilla JavaScript",
@@ -44,7 +49,7 @@ export function Projects() {
         "Intuitive navigation and content hierarchy",
       ],
       hciRelevance:
-        "Building without framework dependencies required careful attention to how information was structured and how users would navigate through content. I focused on semantic markup not just for technical reasons, but because it directly impacts how people understand and interact with the interface.",
+        "Focused on semantic markup to directly impact how people understand and interact with the interface. Information structure drives navigation patterns.",
       gradient: "from-purple-600 to-pink-600",
       link: "https://nacc-usa.org/",
     },
@@ -52,8 +57,8 @@ export function Projects() {
       title: "EN Admin Dashboard",
       tagline: "Data Management Interface",
       description:
-        "An administrative dashboard using React and Material UI, designed for efficient data workflows and reducing cognitive load for complex administrative tasks.",
-      technologies: ["React.js", "Material UI", "GraphQL", "State Management"],
+        "Administrative dashboard using React and Material UI, designed for efficient data workflows and reducing cognitive load for complex tasks.",
+      technologies: ["React.js", "Material UI", "PostgreSQL", "Node.js", "GraphQL"],
       features: [
         "Modular component design for workflow efficiency",
         "Real-time UI updates based on data changes",
@@ -61,7 +66,7 @@ export function Projects() {
         "GraphQL integration for optimized data fetching",
       ],
       hciRelevance:
-        "This dashboard taught me that efficient workflows are not just about speed. They are about predictability. I designed the interface so that similar actions always behaved the same way, and information was grouped by task rather than by data type. The goal was to match the system's structure to how administrators actually think about their work.",
+        "Designed for predictability. Similar actions behave consistently. Information grouped by task rather than data type to match how administrators think.",
       gradient: "from-green-600 to-teal-600",
       status: "Ongoing Project",
     },
@@ -79,90 +84,73 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="space-y-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 hover:shadow-2xl transition-all duration-300"
+              className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 hover:shadow-2xl transition-all duration-300 flex flex-col"
             >
               {/* Project Header */}
-              <div className={`bg-gradient-to-r ${project.gradient} p-8 text-white`}>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <h3 className="text-3xl font-bold mb-2">{project.title}</h3>
-                    <p className="text-white/90 text-lg">{project.tagline}</p>
-                    {project.status && (
-                      <span className="inline-block mt-3 bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm font-medium">
-                        {project.status}
-                      </span>
-                    )}
-                  </div>
-                </div>
+              <div className={`bg-gradient-to-r ${project.gradient} p-6 text-white`}>
+                <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                <p className="text-white/90">{project.tagline}</p>
               </div>
 
               {/* Project Body */}
-              <div className="p-8">
-                <p className="text-slate-700 text-lg leading-relaxed mb-6" style={{lineHeight: '1.8'}}>{project.description}</p>
-
-                {/* Live Website Button */}
-                {project.link && (
-                  <div className="mb-6">
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 hover:scale-105 hover:shadow-lg transition-all duration-300"
-                      aria-label={`Visit ${project.title} live website`}
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Live Website
-                    </a>
-                  </div>
-                )}
+              <div className="p-6 flex-1 flex flex-col">
+                <p className="text-slate-700 leading-relaxed mb-4">{project.description}</p>
 
                 {/* Technologies */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wide mb-3">
+                <div className="mb-4">
+                  <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wide mb-2">
                     Technologies
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
+                    {(expandedTech === index ? project.technologies : project.technologies.slice(0, 3)).map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium border border-slate-200"
+                        className="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium border border-slate-200"
                       >
                         {tech}
                       </span>
                     ))}
+                    {project.technologies.length > 3 && (
+                      <button
+                        onClick={() => setExpandedTech(expandedTech === index ? null : index)}
+                        className="px-3 py-1 bg-blue-50 text-blue-600 rounded-lg text-xs font-medium border border-blue-200 hover:bg-blue-100 transition-colors flex items-center gap-1"
+                      >
+                        {expandedTech === index ? 'Show Less' : 'More'}
+                        <ChevronDown className={`w-3 h-3 transition-transform ${expandedTech === index ? 'rotate-180' : ''}`} />
+                      </button>
+                    )}
                   </div>
-                </div>
-
-                {/* Key Features */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wide mb-3">
-                    Key Features
-                  </h4>
-                  <ul className="grid md:grid-cols-2 gap-3">
-                    {project.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2 text-slate-600">
-                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
 
                 {/* Design Insight */}
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border-l-4 border-blue-600">
-                  <div className="flex items-start gap-3">
-                    <div className="p-2 bg-blue-600 rounded-lg flex-shrink-0">
-                      <Lightbulb className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-slate-900 mb-2">Design Insight</h4>
-                      <p className="text-slate-700 leading-relaxed" style={{lineHeight: '1.8'}}>{project.hciRelevance}</p>
-                    </div>
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border-l-4 border-blue-600 mb-4">
+                  <div className="flex items-start gap-2">
+                    <Lightbulb className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
+                    <p className="text-slate-700 text-sm leading-relaxed">{project.hciRelevance}</p>
                   </div>
+                </div>
+
+                {/* Links */}
+                <div className="mt-auto">
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-all duration-300 text-sm"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Live Site
+                    </a>
+                  ) : (
+                    <div className="w-full flex items-center justify-center px-4 py-2 bg-slate-100 text-slate-600 font-medium rounded-lg text-sm border border-slate-200">
+                      {project.status}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -170,14 +158,10 @@ export function Projects() {
         </div>
 
         {/* Projects Philosophy */}
-        <div className="mt-16 bg-gradient-to-br from-slate-900 to-blue-900 rounded-2xl p-10 text-white">
-          <h4 className="text-2xl font-bold mb-5">Development Approach</h4>
-          <p className="text-blue-100 leading-relaxed text-lg" style={{lineHeight: '1.8', maxWidth: '85ch'}}>
-            These projects represent my evolution as a developer. From focusing purely on technical
-            implementation to prioritizing user needs, interaction design,
-            and accessible experiences. Each project taught me that great software is not
-            just about clean code. It is about understanding human behavior and designing systems that feel
-            intuitive and natural.
+        <div className="mt-16 bg-gradient-to-br from-slate-900 to-blue-900 rounded-2xl p-8 text-white">
+          <h4 className="text-2xl font-bold mb-4">Development Approach</h4>
+          <p className="text-blue-100 leading-relaxed">
+            These projects represent evolution from focusing purely on technical implementation to prioritizing user needs and accessible experiences. Each taught me that great software is not just about clean code. It is about understanding human behavior.
           </p>
         </div>
       </div>

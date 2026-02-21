@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: '/portfolio-website/',
+  publicDir: 'public',
   plugins: [
     react(),
     tailwindcss(),
