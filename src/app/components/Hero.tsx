@@ -24,7 +24,7 @@ export function Hero({ isExportMode = false }: HeroProps) {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full blur-xl opacity-50"></div>
             <img
-              src="/portfolio-website/uploads/profile pic.jpg"
+              src="/portfolio-website/uploads/profilepic.jpg"
               alt="Krishmal Akif"
               className="relative w-40 h-40 rounded-full object-cover border-4 border-white shadow-2xl"
             />
