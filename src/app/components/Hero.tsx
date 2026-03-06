@@ -96,7 +96,9 @@ export function Hero({ isExportMode = false }: HeroProps) {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="mailto:krishmalakif@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=krishmalakif@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-12 h-12 flex items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-indigo-600 hover:text-white transition-all duration-300"
             aria-label="Email Contact"
           >
