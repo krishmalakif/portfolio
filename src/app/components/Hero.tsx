@@ -39,7 +39,7 @@ export function Hero({ isExportMode = false }: HeroProps) {
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-600 mb-4">
-          Full-Stack Developer exploring Human-Centered Systems
+          Full-Stack Developer | UI/UX Enthusiast
         </p>
 
         <p className="text-lg text-slate-500 mb-4">
@@ -48,7 +48,7 @@ export function Hero({ isExportMode = false }: HeroProps) {
 
         <div className="max-w-3xl mx-auto mb-10">
           <p className="text-lg text-slate-700 leading-relaxed">
-            I build scalable web applications and increasingly focus on how people interact with the systems behind them.
+            Building scalable web applications with focus on user experience and clean code.
           </p>
         </div>
 
