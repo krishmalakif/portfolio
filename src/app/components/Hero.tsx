@@ -25,7 +25,7 @@ export function Hero({ isExportMode = false }: HeroProps) {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full blur-xl opacity-50"></div>
             <img
-              src="/portfolio-website/uploads/profilepic.jpg"
+              src="/portfolio/profilepic.jpg"
               alt="Krishmal Akif"
               className="relative w-40 h-40 rounded-full object-cover border-4 border-white shadow-2xl"
             />
@@ -67,7 +67,7 @@ export function Hero({ isExportMode = false }: HeroProps) {
             Get in Touch
           </a>
           <a
-            href="/portfolio-website/resume.pdf"
+            href="/portfolio/resume.pdf"
             download
             className="px-8 py-4 bg-slate-800 text-white font-semibold rounded-lg hover:bg-slate-900 hover:shadow-lg transition-all duration-300"
           >

@@ -94,8 +94,7 @@ export function Skills() {
             My technical skills have been developed through hands-on project work, with increasing
             emphasis on <strong>usability</strong>, <strong>accessibility</strong>, and{" "}
             <strong>user experience</strong>. I approach development not just as writing code, but as
-            crafting experiences that serve human needs. Pursuing formal HCI education will enable me to
-            ground these practical insights in established theory and research methodologies.
+            crafting experiences that serve human needs and align with how people naturally think and interact with technology.
           </p>
         </div>
       </div>
