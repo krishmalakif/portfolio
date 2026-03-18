@@ -54,23 +54,41 @@ export function Projects() {
       link: "https://nacc-usa.org/",
     },
     {
-      title: "EN Admin Dashboard",
-      tagline: "Data Management Interface",
+      title: "DataAnchor",
+      tagline: "Full-Stack Web & Admin Platform",
       description:
-        "Administrative dashboard using React and Material UI, designed for efficient data workflows and reducing cognitive load for complex tasks.",
-      technologies: ["React.js", "Material UI", "PostgreSQL", "Node.js", "GraphQL"],
+        "Professional Next.js website paired with a fully functional React-admin panel, delivering a seamless full-stack experience for data-driven business operations.",
+      technologies: ["Next.js", "React-Admin", "Node.js", "TypeScript", "REST API"],
       features: [
-        "Modular component design for workflow efficiency",
-        "Real-time UI updates based on data changes",
-        "Advanced state management for complex interactions",
-        "GraphQL integration for optimized data fetching",
+        "Next.js frontend with optimized performance",
+        "React-admin panel for full data management",
+        "Role-based access and secure authentication",
+        "Responsive design across all device sizes",
       ],
       hciRelevance:
-        "Designed for predictability. Similar actions behave consistently. Information grouped by task rather than data type to match how administrators think.",
+        "Admin workflows designed around task completion rather than data structure, reducing friction for operators managing complex datasets.",
       gradient: "from-green-600 to-teal-600",
-      status: "Ongoing Project",
+      link: "https://dataanchor.ae/",
     },
   ];
+
+  const fyp: Project = {
+    title: "Leaf Disease Detection App",
+    tagline: "Final Year Project — Full-Stack ML Mobile Application",
+    description:
+      "A full-stack mobile application that detects leaf diseases using a TensorFlow/Keras ML model. Built with React Native for the mobile frontend, Node.js + Flask for the backend, and features user registration, login, image upload, disease prediction, and history tracking.",
+    technologies: ["React Native", "Node.js", "Flask", "TensorFlow", "Keras", "Python"],
+    features: [
+      "ML-powered disease prediction from leaf images",
+      "React Native cross-platform mobile app",
+      "Node.js + Flask dual-backend architecture",
+      "User auth, image upload & prediction history",
+    ],
+    hciRelevance:
+      "Designed for non-technical agricultural users — simple image capture flow with instant visual feedback on disease diagnosis, minimizing steps between problem and answer.",
+    gradient: "from-emerald-500 to-lime-500",
+    github: "https://github.com/krishmalakif/Leaf-Disease-Detection-Mobile-App-",
+  };
 
   return (
     <section id="projects" className="py-24 px-6">
@@ -155,6 +173,52 @@ export function Projects() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Final Year Project */}
+        <div className="mt-10">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-widest rounded-full border border-emerald-300">
+              Final Year Project
+            </span>
+            <div className="flex-1 h-px bg-slate-200" />
+          </div>
+          <div
+            className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-emerald-300 hover:shadow-2xl transition-all duration-300 flex flex-col md:flex-row"
+          >
+            <div className={`bg-gradient-to-r ${fyp.gradient} p-6 text-white md:w-64 flex-shrink-0 flex flex-col justify-center`}>
+              <h3 className="text-2xl font-bold mb-2">{fyp.title}</h3>
+              <p className="text-white/90 text-sm">{fyp.tagline}</p>
+            </div>
+            <div className="p-6 flex-1 flex flex-col">
+              <p className="text-slate-700 leading-relaxed mb-4">{fyp.description}</p>
+              <div className="mb-4">
+                <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wide mb-2">Technologies</h4>
+                <div className="flex flex-wrap gap-2">
+                  {fyp.technologies.map((tech, i) => (
+                    <span key={i} className="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium border border-slate-200">{tech}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border-l-4 border-blue-600 mb-4">
+                <div className="flex items-start gap-2">
+                  <Lightbulb className="w-4 h-4 text-blue-600 flex-shrink-0 mt-1" />
+                  <p className="text-slate-700 text-sm leading-relaxed">{fyp.hciRelevance}</p>
+                </div>
+              </div>
+              <div className="mt-auto">
+                <a
+                  href={fyp.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-700 transition-all duration-300 text-sm"
+                >
+                  <Github className="w-4 h-4" />
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Projects Philosophy */}
