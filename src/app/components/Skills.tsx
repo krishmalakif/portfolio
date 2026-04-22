@@ -4,7 +4,7 @@ export function Skills() {
   const skillCategories = [
     {
       icon: Code2,
-      title: "Technical Development",
+      title: "Systems & Backend Engineering",
       color: "from-blue-500 to-indigo-600",
       skills: [
         { name: "JavaScript (ES6+)", level: 90 },
@@ -17,27 +17,27 @@ export function Skills() {
     },
     {
       icon: Palette,
-      title: "Design & Interaction",
+      title: "AI & Data Systems",
       color: "from-purple-500 to-pink-600",
       skills: [
-        { name: "Responsive Design", level: 85 },
-        { name: "UI/UX Principles", level: 75 },
-        { name: "Interface Structuring", level: 80 },
-        { name: "Interaction Flow Design", level: 75 },
-        { name: "Component Architecture", level: 85 },
-        { name: "Frontend Performance", level: 80 },
+        { name: "Python", level: 80 },
+        { name: "TensorFlow / Keras", level: 75 },
+        { name: "Flask (API Layer)", level: 75 },
+        { name: "ML Pipeline Design", level: 70 },
+        { name: "React Native", level: 75 },
+        { name: "Data Preprocessing", level: 70 },
       ],
     },
     {
       icon: Wrench,
-      title: "Tools & Frameworks",
+      title: "Architecture & Tooling",
       color: "from-green-500 to-teal-600",
       skills: [
+        { name: "RESTful API Design", level: 85 },
+        { name: "GraphQL", level: 70 },
+        { name: "Git & GitHub", level: 85 },
         { name: "Tailwind CSS", level: 90 },
         { name: "Material UI", level: 80 },
-        { name: "Git & GitHub", level: 85 },
-        { name: "GraphQL", level: 70 },
-        { name: "RESTful APIs", level: 85 },
         { name: "Vite / Webpack", level: 75 },
       ],
     },
@@ -51,7 +51,7 @@ export function Skills() {
             Skills & Competencies
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Technical expertise meets design thinking
+            Structured technical expertise across systems engineering, AI integration, and scalable backend development
           </p>
         </div>
 
@@ -89,12 +89,9 @@ export function Skills() {
 
         {/* Skills Context */}
         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200">
-          <h4 className="text-xl font-bold text-slate-900 mb-4">Development Philosophy</h4>
+          <h4 className="text-xl font-bold text-slate-900 mb-4">Engineering Philosophy</h4>
           <p className="text-slate-700 leading-relaxed">
-            My technical skills have been developed through hands-on project work, with increasing
-            emphasis on <strong>usability</strong>, <strong>accessibility</strong>, and{" "}
-            <strong>user experience</strong>. I approach development not just as writing code, but as
-            crafting experiences that serve human needs and align with how people naturally think and interact with technology.
+            My technical competencies have been developed through end-to-end system engineering — from designing relational database schemas and scalable REST APIs to implementing ML inference pipelines and distributed mobile backends. I approach software not as isolated features, but as interconnected systems where <strong>architectural decisions</strong>, <strong>performance constraints</strong>, and <strong>data flow design</strong> determine long-term reliability and scalability.
           </p>
         </div>
       </div>

@@ -4,36 +4,36 @@ export function About() {
   const motivations = [
     {
       icon: Target,
-      title: "User Experience Design",
-      description: "Designing interfaces that prioritize user needs and mental models"
+      title: "Distributed Systems",
+      description: "Designing fault-tolerant, scalable architectures that maintain consistency and performance under real-world load"
     },
     {
       icon: Lightbulb,
-      title: "Interaction Design",
-      description: "Creating meaningful interactions between humans and technology"
+      title: "AI Systems Engineering",
+      description: "Implementing end-to-end ML pipelines — from data preprocessing and model training to optimized inference and deployment"
     },
     {
       icon: Users,
-      title: "Accessible Systems",
-      description: "Building inclusive digital experiences for diverse user groups"
+      title: "Scalable Backend Design",
+      description: "Engineering modular, maintainable server-side systems with a focus on reliability, performance, and clean API contracts"
     }
   ];
 
   const currentWork = [
     {
       icon: Code2,
-      title: "Building",
-      items: ["React/Next.js applications", "RESTful APIs with Node.js", "Responsive UI components"]
+      title: "Engineering",
+      items: ["Scalable Next.js + Node.js systems", "RESTful and GraphQL API design", "Modular full-stack architectures"]
     },
     {
       icon: Palette,
-      title: "Designing",
-      items: ["User-centered interfaces", "Interaction patterns", "Accessible experiences"]
+      title: "Implementing",
+      items: ["ML inference pipelines with TensorFlow", "React Native cross-platform applications", "Admin systems with role-based access control"]
     },
     {
       icon: Zap,
-      title: "Exploring",
-      items: ["Human-computer interaction", "Cognitive design principles", "Usability research methods"]
+      title: "Researching",
+      items: ["Distributed systems theory", "Scalable AI deployment strategies", "Backend performance optimization"]
     }
   ];
 
@@ -45,7 +45,7 @@ export function About() {
             Background
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            From building functional systems to designing meaningful experiences
+            From systems engineering to scalable AI — building with architectural intent
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function About() {
               </p>
               <p className="text-slate-600">Virtual University, Pakistan</p>
               <p className="text-slate-500 mt-4 leading-relaxed">
-                Built foundation in software engineering, algorithms, and full-stack development with modern JavaScript frameworks.
+                Developed rigorous foundations in algorithms, data structures, software engineering principles, and systems design, with applied experience across full-stack and AI-integrated architectures.
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export function About() {
             </div>
             <h3 className="text-2xl font-bold mb-3">Current Focus</h3>
             <p className="text-blue-50 leading-relaxed">
-              Building web systems revealed that the hardest problems are not technical. They are about how users think and navigate interfaces. This shifted my focus from implementing features to designing experiences aligned with human behavior.
+              Engineering production systems revealed that the hardest problems are architectural — how components communicate, how data flows reliably at scale, and how AI models integrate into real-world pipelines. This shifted my focus from feature implementation to systems-level thinking and distributed design.
             </p>
           </div>
         </div>
@@ -104,20 +104,20 @@ export function About() {
 
         {/* Transition Story */}
         <div className="bg-white rounded-2xl p-10 shadow-lg mb-16 border border-slate-100">
-          <h3 className="text-3xl font-bold text-slate-900 mb-6">From Development to Design Thinking</h3>
+          <h3 className="text-3xl font-bold text-slate-900 mb-6">From Implementation to Systems Thinking</h3>
           <div className="max-w-4xl text-slate-700 leading-relaxed space-y-5 text-lg" style={{lineHeight: '1.8'}}>
             <p>
-              My work with <strong>React.js</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong> taught me that technical skills solve only half the problem. The other half is understanding how people think.
+              Engineering production systems with <strong>React.js</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong> demonstrated that scalability and reliability are architectural decisions, not afterthoughts. Each project reinforced the importance of designing for modularity, fault tolerance, and maintainability from the ground up.
             </p>
             <p>
-              Building streaming platforms and admin dashboards showed me that great software is not just about clean code. It is about creating systems that feel natural and reduce cognitive load.
+              Developing an end-to-end AI system — from dataset preprocessing and model training with <strong>TensorFlow/Keras</strong> to mobile deployment via a <strong>Flask</strong> inference API — deepened my understanding of how machine learning integrates into distributed, real-world software architectures.
             </p>
           </div>
         </div>
 
         {/* Research Interests */}
         <div>
-          <h3 className="text-3xl font-bold text-slate-900 mb-10 text-center">Areas of Interest</h3>
+          <h3 className="text-3xl font-bold text-slate-900 mb-10 text-center">Research &amp; Engineering Interests</h3>
           <div className="grid md:grid-cols-3 gap-8">
             {motivations.map((item, index) => (
               <div

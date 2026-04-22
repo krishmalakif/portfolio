@@ -21,9 +21,9 @@ export function Projects() {
   const projects: Project[] = [
     {
       title: "CheapStreamTV",
-      tagline: "Interactive Streaming Platform",
+      tagline: "Scalable Streaming Platform",
       description:
-        "Modern streaming platform built with Next.js and React, emphasizing responsive design and seamless user experience across devices.",
+        "Engineered a high-performance streaming platform using Next.js and React, with a component-driven architecture optimized for responsiveness, fast content delivery, and consistent state management across dynamic data sources.",
       technologies: ["Next.js", "React.js", "Tailwind CSS", "JavaScript", "API Integration"],
       features: [
         "Component-based architecture for UI consistency",
@@ -32,15 +32,15 @@ export function Projects() {
         "Optimized API integration for fast content delivery",
       ],
       hciRelevance:
-        "Restructured interface using grouped sections and clearer hierarchy to reduce cognitive load. Focused on minimizing user decisions at any given moment.",
+        "Designed the content delivery layer around minimizing latency and reducing interface complexity — grouping related content hierarchically to lower cognitive overhead and improve navigational efficiency.",
       gradient: "from-blue-600 to-indigo-600",
       link: "https://cheapstreamtv.com/",
     },
     {
       title: "NAAC-USA Website",
-      tagline: "Content-Focused Web Platform",
+      tagline: "Structured Content & Information Architecture",
       description:
-        "Structured content platform built with core web technologies, emphasizing semantic markup and accessible navigation.",
+        "Designed and implemented a semantically structured web platform using core web technologies, with emphasis on accessible markup, mobile-first responsive layout, and modular JavaScript-driven interaction patterns.",
       technologies: ["HTML5", "Responsive Design", "JavaScript", "PHP", "CSS3"],
       features: [
         "Semantic HTML structure for accessibility",
@@ -49,7 +49,7 @@ export function Projects() {
         "Intuitive navigation and content hierarchy",
       ],
       hciRelevance:
-        "Focused on semantic markup to directly impact how people understand and interact with the interface. Information structure drives navigation patterns.",
+        "Applied information architecture principles to structure content hierarchies that directly govern navigation flow — semantic markup as a system-level decision affecting both accessibility and discoverability.",
       gradient: "from-purple-600 to-pink-600",
       link: "https://nacc-usa.org/",
     },
@@ -57,7 +57,7 @@ export function Projects() {
       title: "DataAnchor",
       tagline: "Full-Stack Web & Admin Platform",
       description:
-        "Professional Next.js website paired with a fully functional React-admin panel, delivering a seamless full-stack experience for data-driven business operations.",
+        "Architected a production-grade Next.js web platform integrated with a fully functional React-admin panel, implementing role-based access control, relational data management, and a modular REST API backend for scalable business operations.",
       technologies: ["Next.js", "React-Admin", "Node.js", "TypeScript", "REST API"],
       features: [
         "Next.js frontend with optimized performance",
@@ -66,7 +66,7 @@ export function Projects() {
         "Responsive design across all device sizes",
       ],
       hciRelevance:
-        "Admin workflows designed around task completion rather than data structure, reducing friction for operators managing complex datasets.",
+        "Admin system architecture designed around operator task flows rather than raw data structure — reducing interaction complexity and improving throughput for high-frequency data management operations.",
       gradient: "from-green-600 to-teal-600",
       link: "https://dataanchor.ae/",
     },
@@ -74,9 +74,9 @@ export function Projects() {
 
   const fyp: Project = {
     title: "Leaf Disease Detection App",
-    tagline: "Final Year Project — Full-Stack ML Mobile Application",
+    tagline: "Final Year Project — End-to-End AI Systems Engineering",
     description:
-      "A full-stack mobile application that detects leaf diseases using a TensorFlow/Keras ML model. Built with React Native for the mobile frontend, Node.js + Flask for the backend, and features user registration, login, image upload, disease prediction, and history tracking.",
+      "Designed and implemented a full-stack AI-integrated mobile system for automated leaf disease classification. The architecture spans a React Native client, a dual-backend layer (Node.js for application logic, Flask for ML inference), and a TensorFlow/Keras convolutional model trained on a curated agricultural dataset — covering the complete pipeline from data preprocessing and model optimization to mobile deployment.",
     technologies: ["React Native", "Node.js", "Flask", "TensorFlow", "Keras", "Python"],
     features: [
       "ML-powered disease prediction from leaf images",
@@ -85,7 +85,7 @@ export function Projects() {
       "User auth, image upload & prediction history",
     ],
     hciRelevance:
-      "Designed for non-technical agricultural users — simple image capture flow with instant visual feedback on disease diagnosis, minimizing steps between problem and answer.",
+      "Engineered the inference pipeline for low-latency mobile response — model quantization and a decoupled Flask API layer ensure prediction throughput remains viable on resource-constrained devices, bridging the gap between ML research and production deployment.",
     gradient: "from-emerald-500 to-lime-500",
     github: "https://github.com/krishmalakif/Leaf-Disease-Detection-Mobile-App-",
   };
@@ -98,7 +98,7 @@ export function Projects() {
             Featured Projects
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Practical applications of web development with focus on user experience
+            Engineering systems across distributed web platforms, scalable backends, and applied AI pipelines
           </p>
         </div>
 
@@ -223,9 +223,9 @@ export function Projects() {
 
         {/* Projects Philosophy */}
         <div className="mt-16 bg-gradient-to-br from-slate-900 to-blue-900 rounded-2xl p-8 text-white">
-          <h4 className="text-2xl font-bold mb-4">Development Approach</h4>
+          <h4 className="text-2xl font-bold mb-4">Engineering Approach</h4>
           <p className="text-blue-100 leading-relaxed">
-            These projects represent evolution from focusing purely on technical implementation to prioritizing user needs and accessible experiences. Each taught me that great software is not just about clean code. It is about understanding human behavior.
+            These projects represent a progression from feature-level implementation to systems-level engineering — each one demanding deliberate decisions around architecture, data flow, scalability, and reliability. The final year project in particular reflects an end-to-end AI systems engineering mindset: from dataset curation and model training to distributed backend design and mobile deployment.
           </p>
         </div>
       </div>
