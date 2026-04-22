@@ -103,7 +103,7 @@ export function Contact() {
             </div>
             <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
             <p className="text-blue-100 leading-relaxed mb-6">
-              I am focused on advancing my understanding of interaction design, user behavior, and accessible systems through deeper technical and research-oriented exploration.
+              I am focused on building scalable, well-architected software systems and am open to discussing projects, technical collaboration, or professional opportunities.
             </p>
           </div>
         </div>
