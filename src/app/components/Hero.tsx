@@ -39,7 +39,7 @@ export function Hero({ isExportMode = false }: HeroProps) {
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-600 mb-4">
-          Software Engineer | Distributed Systems &amp; AI Systems
+          Software Engineer | Distributed Systems &amp; Scalable Backends
         </p>
 
         <p className="text-lg text-slate-500 mb-4">
@@ -48,7 +48,7 @@ export function Hero({ isExportMode = false }: HeroProps) {
 
         <div className="max-w-3xl mx-auto mb-10">
           <p className="text-lg text-slate-700 leading-relaxed">
-            Designing and engineering scalable software systems with a focus on distributed architecture, backend reliability, and applied AI — oriented toward advanced research and MSc-level study in Computer Science.
+            Designing and engineering scalable software systems with a focus on distributed architecture, backend reliability, and applied machine learning integration.
           </p>
         </div>
 

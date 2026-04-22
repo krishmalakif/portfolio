@@ -4,7 +4,7 @@ export function TechStack() {
     { name: "Next.js", category: "Framework" },
     { name: "TypeScript", category: "Language" },
     { name: "Node.js", category: "Backend" },
-    { name: "Python", category: "AI / Backend" },
+    { name: "Python", category: "Backend" },
     { name: "TensorFlow", category: "ML Framework" },
     { name: "Flask", category: "API Layer" },
     { name: "PostgreSQL", category: "Database" },
@@ -19,7 +19,7 @@ export function TechStack() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-slate-900 mb-4">Core Technology Stack</h3>
-          <p className="text-slate-600">Technologies applied across distributed systems, AI pipelines, and scalable backend architectures</p>
+          <p className="text-slate-600">Technologies applied across distributed systems, model pipelines, and scalable backend architectures</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {technologies.map((tech, index) => (

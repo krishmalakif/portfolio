@@ -17,7 +17,7 @@ export function Skills() {
     },
     {
       icon: Palette,
-      title: "AI & Data Systems",
+      title: "Machine Learning & Data",
       color: "from-purple-500 to-pink-600",
       skills: [
         { name: "Python", level: 80 },
@@ -51,7 +51,7 @@ export function Skills() {
             Skills & Competencies
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Structured technical expertise across systems engineering, AI integration, and scalable backend development
+            Structured technical expertise across systems engineering, machine learning integration, and scalable backend development
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export function Skills() {
         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200">
           <h4 className="text-xl font-bold text-slate-900 mb-4">Engineering Philosophy</h4>
           <p className="text-slate-700 leading-relaxed">
-            My technical competencies have been developed through end-to-end system engineering — from designing relational database schemas and scalable REST APIs to implementing ML inference pipelines and distributed mobile backends. I approach software not as isolated features, but as interconnected systems where <strong>architectural decisions</strong>, <strong>performance constraints</strong>, and <strong>data flow design</strong> determine long-term reliability and scalability.
+            My technical competencies have been developed through end-to-end system engineering, from designing relational database schemas and scalable REST APIs to implementing model inference pipelines and distributed mobile backends. I approach software not as isolated features, but as interconnected systems where <strong>architectural decisions</strong>, <strong>performance constraints</strong>, and <strong>data flow design</strong> determine long-term reliability and scalability.
           </p>
         </div>
       </div>

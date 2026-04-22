@@ -32,7 +32,7 @@ export function Projects() {
         "Optimized API integration for fast content delivery",
       ],
       hciRelevance:
-        "Designed the content delivery layer around minimizing latency and reducing interface complexity — grouping related content hierarchically to lower cognitive overhead and improve navigational efficiency.",
+        "Designed the content delivery layer around minimizing latency and reducing interface complexity, grouping related content hierarchically to lower cognitive overhead and improve navigational efficiency.",
       gradient: "from-blue-600 to-indigo-600",
       link: "https://cheapstreamtv.com/",
     },
@@ -49,7 +49,7 @@ export function Projects() {
         "Intuitive navigation and content hierarchy",
       ],
       hciRelevance:
-        "Applied information architecture principles to structure content hierarchies that directly govern navigation flow — semantic markup as a system-level decision affecting both accessibility and discoverability.",
+        "Applied information architecture principles to structure content hierarchies that directly govern navigation flow. Semantic markup as a system-level decision affecting both accessibility and discoverability.",
       gradient: "from-purple-600 to-pink-600",
       link: "https://nacc-usa.org/",
     },
@@ -66,7 +66,7 @@ export function Projects() {
         "Responsive design across all device sizes",
       ],
       hciRelevance:
-        "Admin system architecture designed around operator task flows rather than raw data structure — reducing interaction complexity and improving throughput for high-frequency data management operations.",
+        "Admin system architecture designed around operator task flows rather than raw data structure, reducing interaction complexity and improving throughput for high-frequency data management operations.",
       gradient: "from-green-600 to-teal-600",
       link: "https://dataanchor.ae/",
     },
@@ -74,9 +74,9 @@ export function Projects() {
 
   const fyp: Project = {
     title: "Leaf Disease Detection App",
-    tagline: "Final Year Project — End-to-End AI Systems Engineering",
+    tagline: "Final Year Project: Full-Stack Mobile Application",
     description:
-      "Designed and implemented a full-stack AI-integrated mobile system for automated leaf disease classification. The architecture spans a React Native client, a dual-backend layer (Node.js for application logic, Flask for ML inference), and a TensorFlow/Keras convolutional model trained on a curated agricultural dataset — covering the complete pipeline from data preprocessing and model optimization to mobile deployment.",
+      "Designed and implemented a full-stack mobile system for automated leaf disease classification. The architecture spans a React Native client, a dual-backend layer (Node.js for application logic, Flask for model inference), and a TensorFlow/Keras convolutional model trained on a curated agricultural dataset, covering the complete pipeline from data preprocessing and model optimization to mobile deployment.",
     technologies: ["React Native", "Node.js", "Flask", "TensorFlow", "Keras", "Python"],
     features: [
       "ML-powered disease prediction from leaf images",
@@ -85,7 +85,7 @@ export function Projects() {
       "User auth, image upload & prediction history",
     ],
     hciRelevance:
-      "Engineered the inference pipeline for low-latency mobile response — model quantization and a decoupled Flask API layer ensure prediction throughput remains viable on resource-constrained devices, bridging the gap between ML research and production deployment.",
+      "Engineered the inference pipeline for low-latency mobile response. Model quantization and a decoupled Flask API layer ensure prediction throughput remains viable on resource-constrained devices, bridging the gap between research and production deployment.",
     gradient: "from-emerald-500 to-lime-500",
     github: "https://github.com/krishmalakif/Leaf-Disease-Detection-Mobile-App-",
   };
@@ -98,7 +98,7 @@ export function Projects() {
             Featured Projects
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Engineering systems across distributed web platforms, scalable backends, and applied AI pipelines
+            Engineering systems across distributed web platforms, scalable backends, and applied model integration
           </p>
         </div>
 
@@ -225,7 +225,7 @@ export function Projects() {
         <div className="mt-16 bg-gradient-to-br from-slate-900 to-blue-900 rounded-2xl p-8 text-white">
           <h4 className="text-2xl font-bold mb-4">Engineering Approach</h4>
           <p className="text-blue-100 leading-relaxed">
-            These projects represent a progression from feature-level implementation to systems-level engineering — each one demanding deliberate decisions around architecture, data flow, scalability, and reliability. The final year project in particular reflects an end-to-end AI systems engineering mindset: from dataset curation and model training to distributed backend design and mobile deployment.
+            These projects represent a progression from feature-level implementation to systems-level engineering. Each one demanded deliberate decisions around architecture, data flow, scalability, and reliability. The final year project reflects an end-to-end engineering mindset, from dataset curation and model training to distributed backend design and mobile deployment.
           </p>
         </div>
       </div>

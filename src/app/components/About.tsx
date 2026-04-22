@@ -9,8 +9,8 @@ export function About() {
     },
     {
       icon: Lightbulb,
-      title: "AI Systems Engineering",
-      description: "Implementing end-to-end ML pipelines — from data preprocessing and model training to optimized inference and deployment"
+      title: "Machine Learning Integration",
+      description: "Implementing end-to-end model pipelines, from data preprocessing and training to optimized inference and deployment"
     },
     {
       icon: Users,
@@ -28,12 +28,12 @@ export function About() {
     {
       icon: Palette,
       title: "Implementing",
-      items: ["ML inference pipelines with TensorFlow", "React Native cross-platform applications", "Admin systems with role-based access control"]
+      items: ["Model inference pipelines with TensorFlow", "React Native cross-platform applications", "Admin systems with role-based access control"]
     },
     {
       icon: Zap,
       title: "Researching",
-      items: ["Distributed systems theory", "Scalable AI deployment strategies", "Backend performance optimization"]
+      items: ["Distributed systems theory", "Scalable backend deployment strategies", "Backend performance optimization"]
     }
   ];
 
@@ -45,7 +45,7 @@ export function About() {
             Background
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            From systems engineering to scalable AI — building with architectural intent
+            From systems engineering to scalable backends, building with architectural intent
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function About() {
               </p>
               <p className="text-slate-600">Virtual University, Pakistan</p>
               <p className="text-slate-500 mt-4 leading-relaxed">
-                Developed rigorous foundations in algorithms, data structures, software engineering principles, and systems design, with applied experience across full-stack and AI-integrated architectures.
+                Developed rigorous foundations in algorithms, data structures, software engineering principles, and systems design, with applied experience across full-stack and data-integrated architectures.
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export function About() {
             </div>
             <h3 className="text-2xl font-bold mb-3">Current Focus</h3>
             <p className="text-blue-50 leading-relaxed">
-              Engineering production systems revealed that the hardest problems are architectural — how components communicate, how data flows reliably at scale, and how AI models integrate into real-world pipelines. This shifted my focus from feature implementation to systems-level thinking and distributed design.
+              Engineering production systems revealed that the hardest problems are architectural. How components communicate, how data flows reliably at scale, and how trained models integrate into real-world pipelines. This shifted my focus from feature implementation to systems-level thinking and distributed design.
             </p>
           </div>
         </div>
@@ -110,7 +110,7 @@ export function About() {
               Engineering production systems with <strong>React.js</strong>, <strong>Next.js</strong>, and <strong>Node.js</strong> demonstrated that scalability and reliability are architectural decisions, not afterthoughts. Each project reinforced the importance of designing for modularity, fault tolerance, and maintainability from the ground up.
             </p>
             <p>
-              Developing an end-to-end AI system — from dataset preprocessing and model training with <strong>TensorFlow/Keras</strong> to mobile deployment via a <strong>Flask</strong> inference API — deepened my understanding of how machine learning integrates into distributed, real-world software architectures.
+              Developing an end-to-end classification system, from dataset preprocessing and model training with <strong>TensorFlow/Keras</strong> to mobile deployment via a <strong>Flask</strong> inference API, deepened my understanding of how machine learning integrates into distributed, real-world software architectures.
             </p>
           </div>
         </div>
