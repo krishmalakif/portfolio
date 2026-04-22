@@ -41,7 +41,7 @@ export default function App() {
             © 2026 Krishmal Akif.
           </p>
           <p className="text-slate-300 text-sm font-medium mt-1 leading-relaxed">
-            Software Engineer | Distributed Systems &amp; Scalable Backends
+            Software Developer | Distributed Systems &amp; Scalable Backends
           </p>
         </div>
       </footer>}

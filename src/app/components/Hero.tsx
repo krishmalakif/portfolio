@@ -39,7 +39,7 @@ export function Hero({ isExportMode = false }: HeroProps) {
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-600 mb-4">
-          Software Engineer | Distributed Systems &amp; Scalable Backends
+          Software Developer | Distributed Systems &amp; Scalable Backends
         </p>
 
         <p className="text-lg text-slate-500 mb-4">
